@@ -66,4 +66,41 @@ body {
     .callback:hover {
         transform: scale(1.04);
         color: rgb(88, 88, 88);
+    
+            @media only screen and (max-width: 1200px) {
+        
+    }
+
+    @media only screen and (max-width: 992px) {
+        
+    }
+
+    @media only screen and (max-width: 762px) {
+        
+    }
+
+    @media only screen and (max-width: 480px) {
+        
+    }
+
+    @media only screen and (max-width: 320px) {
+        
+    }
+
+    
+
+    @media only screen and (min-width: 320px) {
+        
+    }
+
+    @media only screen and (min-width: 480px) {
+        
+    }
+
+    @media only screen and (min-width: 768px) {
+        
+    }
+
+    @media only screen and (min-width: 992px) {
+        
     }
