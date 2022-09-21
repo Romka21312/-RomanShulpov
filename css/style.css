@@ -1,0 +1,69 @@
+body {
+    background-image: url(../images/fon.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #000;
+    min-width: 320px;
+    overflow-x: hidden;
+    height: auto;
+}
+
+.navbar {
+    width: 100%;
+    height: 70px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .1);
+}
+
+.navbar .container {
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-menu {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.navbar-menu li {
+    display: inline-block;
+
+}
+
+    .navbar-menu li a {
+        display: inline-block;
+        color: gray;
+        opacity: 0.6;
+        text-decoration: none;
+        padding: 15px;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .navbar-menu li a:hover {
+        opacity: 1;
+    }
+
+    .navbar-wrap {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .callback {
+        margin-left: 20px;
+        padding: 12px 30px;
+        background-color: #34C924;
+        border-radius: 95px;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        transition: all 1s ease-in-out;
+    }
+
+    .callback:hover {
+        transform: scale(1.04);
+        color: rgb(88, 88, 88);
+    }
