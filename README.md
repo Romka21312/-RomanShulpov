@@ -1,0 +1,2 @@
+# ScootSchollKub
+Самокат школа KUB
