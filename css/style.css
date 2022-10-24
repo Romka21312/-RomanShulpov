@@ -1,0 +1,473 @@
+html,body {
+height: 100%;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.body {
+  background-image: url(/images/fon.jpg);
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+}
+
+.wrapper {
+
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(211, 247, 204);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, .1);
+}
+
+.header_body {
+  position: relative;
+  z-index: 2;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  min-height: 200%;
+}
+
+.header_logo {
+  flex: 0 0 60px;
+}
+
+.header_logo img {
+  max-width: 100%;
+}
+
+.header_burger {
+  display: none;
+}
+
+.header_menu {
+
+}
+
+@media (max-width: 767) {
+  .header_burger{
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+  }
+  
+}
+
+.header_burger::before {
+
+}
+
+.header_burger::after {
+  content: "";
+  color: rgb(255, 255, 255);
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  left: 0;
+}
+
+.header_burger::after {
+  bottom: 0;
+}
+
+.header_burger::before {
+  top: 0;
+}
+
+.header_burger span {
+  position: absolute;
+  color: black;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+}
+
+.header_list {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+.header_list li {
+margin: 0px 0px 0px 30px;
+}
+
+.header_list li a:hover {
+opacity: 1;
+color: black;
+}
+
+.header_list li:hover {
+  opacity: 1;
+  }
+
+.header_item {
+  list-style: none;
+}
+
+.header_link {
+  color: rgb(82, 82, 82);
+  text-decoration: none;
+  font-size: 18px;
+  text-transform: uppercase;
+  opacity: 0.6;
+  transition: 0.5s ease-in-out;
+}
+
+.content {
+padding: 100px 0px 0px 0px;
+}
+    
+.content_text__main {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.content_text__learning {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.content_text{
+  font-size: 18px;
+  line-height: 25px;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+}
+
+.content_text__block {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content_text p{
+  margin: 0px 0px 20px 0px;
+  }
+
+  .callback {
+    margin-bottom: 10px;
+    padding: 10px 30px;
+    background-color: rgb(51, 51, 51);
+    border-radius: 100px;
+    border-color: black;
+    color: rgb(193, 255, 174);
+    text-decoration: none;
+    margin-right: 90px;
+  }
+
+  .callback:hover {
+    transform: scale(1.00);
+    transition: all .1s ease-in-out;
+    color:rgb(146, 207, 127);
+    background-color: rgb(66, 66, 66);
+  }
+
+  .info-text {
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 5px;
+
+  }
+
+  .contacts-in-text {
+    color: rgb(163, 29, 5);
+    text-decoration: none;
+
+  }
+   
+  .contacts-in-text:hover {
+    color: black;
+  }
+
+  .people {
+    width: 150px;
+    height: 150px;
+    padding-bottom: 10px;
+  }
+
+  .name-img {
+    padding-left: 13px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+  }
+
+  .uchastniki {
+    height: 150px;
+    width: 150px;
+    padding: 50px;
+  }
+
+  .name-people {
+
+  }
+
+  .specialnost-people {
+
+  }
+
+  .img_kub {
+    padding-left: 1100px;
+    width: 110%;
+    height: 110%;
+    padding-bottom: 300px;
+  }
+
+  .phone-number {
+    color: rgb(163, 29, 5);
+  }
+
+  .vk-in-text {
+    color: #45688E;
+    text-decoration: none;
+  }
+
+  .vk-in-text::before {
+    transition: 0.1s ease-in-out;
+  }
+
+  .vk-in-text:hover {
+    color: black;
+  }
+
+  .price {
+    text-align: center;
+    color: rgb(78, 161, 40);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .groop {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .content_text__learning {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .Odinochni {
+    padding-bottom: 50px;
+
+  }
+
+  .Barnaul {
+    height: 470px;
+    width: 620px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-left: 150px;
+  }
+
+  .Barnaul-text {
+    margin-left: 80px;
+    font-family:'Times New Roman', Times, serif;
+    color: #464444;
+
+  }
+
+  .link_vk_obychenie {
+    color: #1b9c0f;
+    text-decoration: none;
+  }
+
+  .link_vk_obychenie :hover {
+    transition: 0.5ms;
+    transform: scale(0, 0, 0, 1);
+    color:rgba(0, 0, 0, .1);
+  }
+
+  .img-obychenie {
+    width: 700px;
+    height: 450px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: 300px;
+    -webkit-filter: blur(1px); 
+    filter: blur(2.5px); 
+  }
+
+  .fon-1 {
+    background: url(../images/fon.jpg) no-repeat;
+    height: 1600px;
+    
+  }
+
+  .fon-2 {
+    background: url(../images/fon.jpg) no-repeat;
+    height: 937px;
+  }
+
+  .fon-3 {
+    background: url(../images/fon-3.jpg) no-repeat;
+    height: 800px;
+  }
+
+  .fon-4 {
+  }
+
+  .SkateParkUbileuka {
+    display: inline-block;
+    margin-left: 600px;
+    margin-top: 40px;
+  }
+
+  .PlanSkateParkUbileuka {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .text-scoot-2 {
+    margin-top: 100px;
+    margin-left: 370px;
+  }
+
+.tovar-block {
+  width: 210px;
+  height: 398px;
+  background: rgb(255, 255, 255);
+  border-radius: 5%;
+  margin-top: 100px;
+  margin-left: 20px;
+  align-items: center;
+  display: inline-block;
+  position: relative;
+  float: left;
+  left: 25%;
+}
+
+.tovar-1-img {
+  width: 210px;
+  height: 200px;
+  display: inline-block;
+}
+
+.tovar-name {
+  font-family:  Verdana, Geneva, Tahoma, sans-serif;
+  color: #1b9c0f;
+  text-align:  center;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: black;
+}
+
+.price-tovars {
+  text-align:  center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+}
+
+.tovar-opisanie {
+  font-size: 10px;
+  text-align:  center;
+}
+
+.pay-sticker-pak {
+  margin-bottom: 10px;
+
+  background-color: rgb(51, 51, 51);
+  border-radius: 100px;
+  border-color: black;
+  color: rgb(193, 255, 174);
+  text-decoration: none;
+
+  padding: 6px 15px;
+  margin-left: 55px;
+  display: inline-block;
+
+
+}
+
+.pay-sticker-pak:hover {
+  transform: scale(1.00);
+  transition: all .1s ease-in-out;
+  color:rgb(146, 207, 127);
+  background-color: rgb(66, 66, 66);
+}
+
+
+.pay-trenirovka {
+  margin-bottom: 10px;
+  padding: 10px 30px;
+  background-color: rgb(51, 51, 51);
+  border-radius: 100px;
+  border-color: black;
+  color: rgb(193, 255, 174);
+  text-decoration: none;
+  margin-right: 90px;
+  margin-left: 50px;
+}
+
+.img-pay-trenirovka {
+  width: 200px;
+  height: 120px;
+  margin-left: 35%;
+
+}
+
+.pay-trenirovka:hover {
+  transform: scale(1.00);
+  transition: all .1s ease-in-out;
+  color:rgb(146, 207, 127);
+  background-color: rgb(66, 66, 66);
+}
+
+.oplata-trenirovka {
+  font-family:  Verdana, Geneva, Tahoma, sans-serif;
+  color: #1b9c0f;
+  text-align:  center;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: black;
+}
+
+.pay-trenirovka:hover {
+    transform: scale(1.00);
+  transition: all .1s ease-in-out;
+  color:rgb(146, 207, 127);
+  background-color: rgb(66, 66, 66);
+}
+
+.price-pay-trenirovka {
+  text-align:  center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+}
+
+.pay-block {
+  width: 700px;
+  height: 270px;
+  background: rgb(255, 255, 255);
+  border-radius: 5%;
+  margin-top: 100px;
+  margin-left: 20px;
+  align-items: center;
+  margin-left: 30%;
+}
+
+.pay-trenirovka-opisanie {
+  font-size: 12px;
+  text-align: center;
+  color: #1b9c0f;
+  -webkit-text-stroke-width: 0.3px;
+  -webkit-text-stroke-color: black;
+}
+
