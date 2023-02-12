@@ -1,0 +1,654 @@
+html,body {
+height: 100%;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.body {
+  background-image: url(/images/fon.jpg);
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+}
+
+.wrapper {
+
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(211, 247, 204);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, .1);
+}
+
+.header_body {
+  position: relative;
+  z-index: 2;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  min-height: 200%;
+}
+
+.header_logo {
+  flex: 0 0 60px;
+}
+
+.header_logo img {
+  max-width: 100%;
+}
+
+.header_burger {
+  display: none;
+}
+
+.header_menu {
+
+}
+
+@media (max-width: 767) {
+  .header_burger{
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+  }
+  
+}
+
+.header_burger::before {
+
+}
+
+.header_burger::after {
+  content: "";
+  color: rgb(255, 255, 255);
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  left: 0;
+}
+
+.header_burger::after {
+  bottom: 0;
+}
+
+.header_burger::before {
+  top: 0;
+}
+
+.header_burger span {
+  position: absolute;
+  color: black;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+}
+
+.header_list {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+.header_list li {
+margin: 0px 0px 0px 30px;
+}
+
+.header_list li a:hover {
+opacity: 1;
+color: black;
+}
+
+.header_list li:hover {
+  opacity: 1;
+  }
+
+.header_item {
+  list-style: none;
+}
+
+.header_link {
+  color: rgb(82, 82, 82);
+  text-decoration: none;
+  font-size: 18px;
+  text-transform: uppercase;
+  opacity: 0.6;
+  transition: 0.5s ease-in-out;
+}
+
+.content {
+padding: 100px 0px 0px 0px;
+}
+    
+.content_text__main {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.content_text__learning {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.content_text{
+  font-size: 18px;
+  line-height: 25px;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+}
+
+.content_text__block {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content_text p{
+  margin: 0px 0px 20px 0px;
+  }
+
+  .callback {
+    margin-bottom: 10px;
+    padding: 10px 30px;
+    background-color: rgb(51, 51, 51);
+    border-radius: 100px;
+    border-color: black;
+    color: rgb(193, 255, 174);
+    text-decoration: none;
+    margin-right: 90px;
+  }
+
+  .callback:hover {
+    transform: scale(1.00);
+    transition: all .1s ease-in-out;
+    color:rgb(146, 207, 127);
+    background-color: rgb(66, 66, 66);
+  }
+
+  .info-text {
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 5px;
+
+  }
+
+  .contacts-in-text {
+    color: rgb(163, 29, 5);
+    text-decoration: none;
+
+  }
+   
+  .contacts-in-text:hover {
+    color: black;
+  }
+
+  .people {
+    width: 150px;
+    height: 150px;
+    padding-bottom: 10px;
+  }
+
+  .name-img {
+    padding-left: 13px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+  }
+
+  .uchastniki {
+    height: 150px;
+    width: 150px;
+    padding: 50px;
+  }
+
+  .name-people {
+    color: white;
+  }
+
+  .specialnost-people {
+    color: white;
+  }
+
+
+  .phone-number {
+    color: rgb(163, 29, 5);
+  }
+
+  .vk-in-text {
+    color: #45688E;
+    text-decoration: none;
+  }
+
+  .vk-in-text::before {
+    transition: 0.1s ease-in-out;
+  }
+
+  .vk-in-text:hover {
+    color: black;
+  }
+
+  .price {
+    text-align: center;
+    color: rgb(78, 161, 40);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .groop {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .content_text__learning {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .Odinochni {
+    padding-bottom: 50px;
+
+  }
+
+
+
+  .link_vk_obychenie {
+    color: #1b9c0f;
+    text-decoration: none;
+  }
+
+  .link_vk_obychenie :hover {
+    transition: 0.5ms;
+    transform: scale(0, 0, 0, 1);
+    color:rgba(0, 0, 0, .1);
+  }
+
+  .img-obychenie {
+    width: 700px;
+    height: 450px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: 300px;
+    -webkit-filter: blur(1px); 
+    filter: blur(2.5px); 
+  }
+
+  .fon-1 {
+    background: rgb(17,17,17);
+    
+  }
+
+  .fon-2 {
+    background:rgb(17,17,17);
+    height: 937px;
+  }
+
+  .fon-3 {
+    background-color: rgb(17,17,17);
+  }
+
+  .fon-4 {
+  }
+
+  .SkateParkUbileuka {
+    display: inline-block;
+    margin-left: 600px;
+    margin-top: 40px;
+  }
+
+  .PlanSkateParkUbileuka {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .text-scoot-2 {
+    margin-top: 100px;
+    margin-left: 370px;
+  }
+
+.tovar-block {
+  width: 330px;
+  height: 580px;
+  background: rgb(255, 255, 255);
+  margin-top: 200px;
+  margin-left: 20px;
+  border-radius: 2%;
+  align-items: center;
+  display: inline-block;
+  position: relative;
+  float: left;
+  left: 13%;
+  bottom: 50px;
+}
+
+.tovar-1-img {
+  width: 100%;
+  height: 50%;
+  display: inline-block;
+}
+
+.tovar-name {
+  font-family:  Verdana, Geneva, Tahoma, sans-serif;
+  color: #1b9c0f;
+  text-align:  center;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: black;
+}
+
+.price-tovars {
+  margin-left: 40%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+}
+
+.tovar-opisanie {
+  font-size: 10px;
+  text-align:  center;
+}
+
+.pay-sticker-pak {
+  margin-bottom: 10px;
+
+  background-color: rgb(51, 51, 51);
+  border-radius: 100px;
+  border-color: black;
+  color: rgb(193, 255, 174);
+  text-decoration: none;
+
+  padding: 6px 15px;
+  margin-left: 28%;
+  display: inline-block;
+
+
+}
+
+.pay-sticker-pak:hover {
+  transform: scale(1.00);
+  transition: all .1s ease-in-out;
+  color:rgb(146, 207, 127);
+  background-color: rgb(66, 66, 66);
+}
+
+
+
+.img-pay-trenirovka {
+  width: 200px;
+  height: 120px;
+  margin-left: 35%;
+
+}
+
+.pay-trenirovka:hover {
+  transform: scale(1.00);
+  transition: all .1s ease-in-out;
+  color:rgb(146, 207, 127);
+  background-color: rgb(66, 66, 66);
+}
+
+.oplata-trenirovka {
+  font-family:  Verdana, Geneva, Tahoma, sans-serif;
+  color: #1b9c0f;
+  text-align:  center;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: black;
+}
+
+.pay-trenirovka:hover {
+    transform: scale(1.00);
+  transition: all .1s ease-in-out;
+  color:rgb(146, 207, 127);
+  background-color: rgb(66, 66, 66);
+}
+
+.price-pay-trenirovka {
+  text-align:  center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+}
+
+
+.pay-trenirovka-opisanie {
+  font-size: 12px;
+  text-align: center;
+  color: #1b9c0f;
+  -webkit-text-stroke-width: 0.3px;
+  -webkit-text-stroke-color: black;
+}
+
+.v-nalichie {
+  font-size: 15px;
+  display: inline-block;
+  margin-left: 40%;
+  
+}
+
+.v-nalichie-tochka {
+  display: inline-block;
+  color: green;
+  font-size: 40px;
+  font-size: 20px;
+}
+
+.net-v-nalichie {
+  font-size: 15px;
+  display: inline-block;
+  margin-left: 35%;
+}
+
+.net-v-nalichie-tochka {
+  display: inline-block;
+  color: red;
+  font-size: 20px;
+}
+
+.phone {
+  margin-left: 200px;
+  padding-top: 100px;
+  color: white;
+}
+
+.skidka {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: red;
+  color: rgb(255, 255, 255);
+  padding-left: 8px;
+  margin-left: 115px;
+  margin-right: 115px;
+}
+
+.number_director {
+  padding: 10px 30px;
+  border-radius: 100px;
+  border-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  margin-left: 200px;
+  font-size: 16px;
+  line-height: 24px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.number_director:hover {
+  transform: scale(1.00);
+  transition: all .1s ease-in-out;
+  color:rgb(214, 212, 212);;
+}
+
+.Kub_img {
+  width: 180px;
+  height: 70px;
+  margin-left: 45%;
+  margin-bottom: 10px;
+  position: relative;
+  bottom: 30px;
+}
+
+.time_every_day {
+  color: white;
+  position: relative;
+  left: 1300px;
+  bottom: 110px;
+} 
+
+.WhatsApp {
+  color: #1b9c0f;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif; 
+}
+
+.WhatsApp:hover {
+  transform: scale(1.00);
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #187c0f;
+} 
+
+.Roman-Shulpov-img-1 {
+  position: relative;
+  margin-left: 1100px;
+  bottom: 310px;
+  width: 431px;
+  height: 431px;
+} 
+
+ .ScootSchollName {
+  color: white;
+  position: relative;
+  margin-left: 24%;
+  top: 200px;
+  font-size: 42px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+} 
+
+.programm-scoot-1 {
+  font-size: 20px;
+  position: relative;
+  top: 270px;
+  left: 370px;
+  text-align: left;
+  font-family: Bookman, URW Bookman L, serif;
+  color: white;
+  width: 380px;
+  height: 100px;
+  margin-left: 80px;
+}
+
+.programm-scoot-2 {
+  font-size: 16px;
+  position: relative;
+  top: 250px;
+  left: 450px;
+  text-align: left;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: rgb(119, 119, 119);
+  width: 600px;
+  height: 300px;
+}
+
+.time-every-day {
+  color: white;
+  position: relative;
+  margin-left: 70%;
+  bottom: 90px;
+}
+
+.professional_treners {
+  color: white;
+  width: 20%;
+  position: relative;
+  left: 26%;
+}
+
+.special-metodic {
+  color: white;
+  width: 400px;
+  position: relative;
+  left: 26%;
+}
+
+.bezopasnost {
+  color: white;
+  width: 400px;
+  position: relative;
+  left: 26%;
+}
+
+.galocka {
+  position: relative;
+  left: 430px;
+  top: 45px;
+}
+
+.our-prem {
+  color: white;
+  font-size: 50px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: relative;
+  margin-left: 35%;
+}
+
+
+.vacym-img-1 {
+  position: relative;
+  margin-left: 950px;
+  bottom: 500px;
+}
+
+
+.block-ordering {
+  background-color: #3da145;
+  height: 200px;
+  width: 430px;
+  border-radius: 8px;
+}
+
+.text-ordering {
+  text-align: center;
+  margin-top: 20px;
+  font-family: cursive;
+}
+
+.go-1 {
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 3px;
+  padding-bottom: 5px;
+margin-top: 20px;
+margin-left: 85px;
+text-decoration: none;
+color: rgb(44, 44, 44);
+font-size: 25px;
+background-color: lavender;
+border-radius: 7px;
+}
+
+.go-1:hover {
+color: rgb(255, 255, 255);
+background-color: rgb(97, 97, 102);
+transition: 0.4s ease-in-out;
+transition: 0.4s ease-out;
+}
+  
+.fon-6 {
+  background-image: url("../images/fon-6.jpg");
+  background-repeat: no-repeat;
+}
+
+
+
+
